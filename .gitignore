@@ -1,0 +1,9 @@
+/bin/
+/out/
+/target/
+/lib/
+*.class
+*.log
+*.iml
+.idea/
+node_modules/
