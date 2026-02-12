@@ -1,5 +1,4 @@
-package main.java.com.complaint.util;
-
+package com.complaint.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,8 +11,9 @@ public class DBConnection {
     private static final String PASSWORD = "1612";
 
     public static Connection getConnection() throws Exception {
+
         Class.forName("com.mysql.cj.jdbc.Driver");
+
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 }
-
